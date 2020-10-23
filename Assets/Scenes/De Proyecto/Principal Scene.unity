@@ -213,6 +213,7 @@ RectTransform:
   m_Children:
   - {fileID: 635486542}
   - {fileID: 2041735195}
+  - {fileID: 1111328988}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -498,8 +499,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.52118015, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.9856, y: 0.25}
-  m_SizeDelta: {x: 1.9711914, y: -0.5}
+  m_AnchoredPosition: {x: 0.02078247, y: 0.2501068}
+  m_SizeDelta: {x: -0.04147339, y: -0.5001831}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &635486543
 MonoBehaviour:
@@ -537,6 +538,88 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 635486541}
+  m_CullTransparentMesh: 0
+--- !u!1 &1111328987
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1111328988}
+  - component: {fileID: 1111328990}
+  - component: {fileID: 1111328989}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1111328988
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1111328987}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 112130144}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.12726706}
+  m_AnchorMax: {x: 0.9924433, y: 1}
+  m_AnchoredPosition: {x: -0.2000122, y: 0.69999695}
+  m_SizeDelta: {x: -0.36468506, y: -1.454895}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1111328989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1111328987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.33928955, g: 1, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 45
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 3
+    m_MaxSize: 50
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'You Win
+
+    Recompensa:
+
+    https://www.pornogratisdiario.com/xxx/'
+--- !u!222 &1111328990
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1111328987}
   m_CullTransparentMesh: 0
 --- !u!1 &1746164056
 GameObject:
@@ -664,8 +747,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -368.5, y: 0}
-  m_SizeDelta: {x: -737.08307, y: 0}
+  m_AnchoredPosition: {x: -190.07, y: -0.0008087158}
+  m_SizeDelta: {x: -380.1448, y: 0.0015869141}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2041735196
 MonoBehaviour:
