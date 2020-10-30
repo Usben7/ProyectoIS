@@ -6,7 +6,7 @@ public class Movimiento : MonoBehaviour
 {
     [Range(1, 10)] public float rotationVelocity;
     [Range(1, 10)] public float walkingVelocity;
-    [Range(1, 10)] public float runVelocity = 2f;
+   
 
     float rotationY;
     float axisX;
@@ -52,5 +52,9 @@ public class Movimiento : MonoBehaviour
         speedZ = Mathf.Cos(rotationY * Mathf.Deg2Rad) * walkingVelocity * axisY ;//seno del ángulo "rotationY", Mathf.Sin solo recibe radianes, por lo que hay que convertir el ángulo de grados a radianes
         cc.SimpleMove(new Vector3(speedX, 0, speedZ));
         transform.localEulerAngles = new Vector3(0, rotationY, 0);
+
+      
+
     }
+    
 }

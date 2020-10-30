@@ -10,8 +10,8 @@ public class TranslationMovement : MonoBehaviour
         IDDLEJUMP,
         WALK,
         WALKJUMP,
-        RUN,
-        RUNJUMP,
+        //RUN,
+        //RUNJUMP,
         REVERSE,
         REVERSEJUMP,
     }
@@ -43,7 +43,7 @@ public class TranslationMovement : MonoBehaviour
         if (Input.GetKey(KeyCode.W))
         {
             //Para correr y correr girando
-            if (Input.GetKey(KeyCode.LeftShift))
+            /*if (Input.GetKey(KeyCode.LeftShift))
             {
                 if (Input.GetKey(KeyCode.Space))
                 {
@@ -53,8 +53,8 @@ public class TranslationMovement : MonoBehaviour
                 {
                     currentState = STATES.RUN;
                 }
-            }
-            else if (Input.GetKey(KeyCode.Space))
+            }*/
+            if (Input.GetKey(KeyCode.Space))
             {
                 currentState = STATES.WALKJUMP;
             }
@@ -97,9 +97,9 @@ public class TranslationMovement : MonoBehaviour
             case STATES.WALK:
                 walk();
                 break;
-            case STATES.RUN:
+            /*case STATES.RUN:
                 run();
-                break;
+                break;*/
             case STATES.REVERSE:
                 reverse();
                 break;
@@ -109,9 +109,9 @@ public class TranslationMovement : MonoBehaviour
             case STATES.WALKJUMP:
                 walkJump();
                 break;
-            case STATES.RUNJUMP:
+            /*case STATES.RUNJUMP:
                 runJump();
-                break;
+                break;*/
             case STATES.REVERSEJUMP:
                 reverseJump();
                 break;
@@ -120,46 +120,46 @@ public class TranslationMovement : MonoBehaviour
     }
     void idle()
     {
-        anim.SetInteger("Estate", 0);
+        anim.SetInteger("Estado", 0);
     }
     void iddleJump()
     {
-        anim.SetInteger("Estate", 3);
+        anim.SetInteger("Estado", 2);
     }
 
 
     void walk()
     {
-        anim.SetInteger("Estate", 1);
+        anim.SetInteger("Estado", 1);
         transform.Translate(0, 0, speedWalk);
     }
     void walkJump()
     {
-        anim.SetInteger("Estate", 3);
+        anim.SetInteger("Estado", 2);
         transform.Translate(0, 0, speedWalk);
     }
 
 
-    void run()
+    /*void run()
     {
-        anim.SetInteger("Estate", 2);
+        anim.SetInteger("Estado", 2);
         transform.Translate(0, 0, speedRun);
     }
     void runJump()
     {
-        anim.SetInteger("Estate", 3);
+        anim.SetInteger("Estado", 3);
         transform.Translate(0, 0, speedRun);
-    }
+    }*/
 
 
     void reverse()
     {
-        anim.SetInteger("Estate", 1);
+        anim.SetInteger("Estado", 1);
         transform.Translate(0, 0, -speedWalk);
     }
     void reverseJump()
     {
-        anim.SetInteger("Estate", 3);
+        anim.SetInteger("Estado", 2);
         transform.Translate(0, 0, -speedWalk);
     }
 }
