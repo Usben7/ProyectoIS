@@ -29,7 +29,7 @@ public class Movimiento : MonoBehaviour
         cc = GetComponent<CharacterController>();
         anim = GetComponent<Animator>();
         
-        cc.detectCollisions = true;
+        //cc.detectCollisions = true;
     }
     // Update is called once per frame
     void Update()
@@ -50,7 +50,7 @@ public class Movimiento : MonoBehaviour
         rotationY += axisX * rotationVelocity;
         speedX = Mathf.Sin(rotationY * Mathf.Deg2Rad) * walkingVelocity * axisY ;//seno del ángulo "rotationY", Mathf.Sin solo recibe radianes, por lo que hay que convertir el ángulo de grados a radianes
         speedZ = Mathf.Cos(rotationY * Mathf.Deg2Rad) * walkingVelocity * axisY ;//seno del ángulo "rotationY", Mathf.Sin solo recibe radianes, por lo que hay que convertir el ángulo de grados a radianes
-        cc.SimpleMove(new Vector3(speedX, 0, speedZ));
+        //cc.SimpleMove(new Vector3(speedX, 0, speedZ));
         transform.localEulerAngles = new Vector3(0, rotationY, 0);
 
       
