@@ -23,6 +23,10 @@ public class CharacterController : MonoBehaviour {
         }
 	// Update is called once per frame
 	void Update () {
+
+        if (Input.GetKeyUp(KeyCode.Space)) {
+            transform.Translate(0, 2, 0);
+        }
                     
             float speedModifier = 1;
         if (Input.GetKey(KeyCode.LeftShift)) {
