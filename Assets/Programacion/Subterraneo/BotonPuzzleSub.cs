@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class BotonPuzzleSub : MonoBehaviour
 {
-    public GameObject Personaje; 
+    public GameObject Personaje;
+    public float Orden;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +23,7 @@ public class BotonPuzzleSub : MonoBehaviour
         if (other.name == Personaje.name)
         {
             GetComponent<Animator>().SetBool("Estado", true);
+
         }
     }
 }

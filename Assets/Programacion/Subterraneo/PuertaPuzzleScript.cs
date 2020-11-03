@@ -9,7 +9,7 @@ public class PuertaPuzzleScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        total = 10;
+        total = 5;
     }
 
     // Update is called once per frame
@@ -20,7 +20,10 @@ public class PuertaPuzzleScript : MonoBehaviour
 
     public void Verificar(int num) 
     {
-        total = total / num;
-        if (total <= 0.5f) { }
+        total = total - num;
+        if (total == -10) {
+        
+
+        }
     }
 }
